@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.stateOn {
+    background-color: #ededed;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 1px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: green;
+    font-family:arial; 
+    font-size: 12px;
+    padding: 8px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+.stateOff {
+    background-color: #ededed;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: red;
+    font-family:arial;
+    font-size: 12px;
+    padding: 8px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+        </style>
+        <!--script type="text/javascript" src="../scripts/myScript.js"></script-->
+        <script type="text/javascript">
+
+var savedState = 1;
+
+function changeState(newState) {
+    var eleButton = document.getElementById('stateButton');
+    if (newState == 1) {
+        eleButton.innerHTML = "On";
+        // eleButton.class = "stateOn";
+        eleButton.setAttribute('class', "stateOn");
+    }
+    else if (newState == 0) {
+        eleButton.innerHTML = "Off";
+        // eleButton.class = "stateOff";
+        eleButton.setAttribute('class', "stateOff");
+    }
+    else {
+        if (savedState == 1) {
+            changeState(0);
+            savedState = 0;
+        }
+        else {
+            changeState(1);
+            savedState = 1;
+        }
+    }
+}
+
+</script>
+    </head>
+    <body>
+
+        <h1>My First JavaScript</h1>
+        <p id="demo">This is a paragraph.</p>
+
+        <button type="button" id="stateButton" onclick="changeState()">Turn On</button><br/>
+        <button type="button" id="stateButton2" onclick="changeState(1)">Turn On</button>
+        <button type="button" id="stateButton2" onclick="changeState(0)">Turn Off</button>
+
+        <script type="text/javascript">
+
+changeState();
+
+</script>
+    </body>
+</html> 
