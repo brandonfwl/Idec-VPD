@@ -24,7 +24,7 @@ div#content {
 	margin: 0 auto;
 	padding: 10px;
 	border: 1px solid #ccc;
-	background-color: #eee;
+	background-color: white;
 }
 
 /* setup body */
@@ -34,7 +34,7 @@ body {
 	margin: 5px;
 	line-height: 1;
 	font-family: Georgia, serif;
-	font-size: 16pt;
+	font-size: 12pt;
 }
 
 /* resonable starting margins */
@@ -100,17 +100,71 @@ div.sidebar {
 }
 
 .registerDisplay {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background-color: #ededed;
 	-moz-border-radius: 6px;
-	-webkit-border-radius: 1px;
+	-webkit-border-radius: 6px;
 	border-radius: 1px;
 	border: 1px solid #dcdcdc;
 	display: inline-block;
 	color: #777777;
 	font-family:arial;
 	font-size: 15px;
-	padding: 12px 24px;
+	padding: 12px 12px;
 	text-decoration: none;
 	text-shadow: 1px 1px 0px #ffffff;
 }
+.stateOn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background-color: #ededed;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 1px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: green;
+    font-family:arial; 
+    font-size: 12px;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ffffff;
+}.stateOn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.stateOn:active {
+	position:relative;
+	top:1px;
+}
+.stateOff {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background-color: #ededed;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: red;
+    font-family:arial;
+    font-size: 12px;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ffffff;
+}.stateOff:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.stateOff:active {
+	position:relative;
+	top:1px;
+}
+
 

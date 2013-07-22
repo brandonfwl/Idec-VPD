@@ -5,16 +5,19 @@
 	<title>VPD Testing Page</title>
 	<meta name="generator" content="BBEdit 10.5" />
 	<link rel="stylesheet" type="text/css" href="main.css" />
+	<script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
 
 <div id="content">
 
 <header class="header">VPD Testing Page</header>
+
+<p>Enable Circuit Test Bit Button,<button type="button" id="stateButton" onclick="changeState()"></button></p>
 	
 <p>Enable Circuit Bit Button, <span class="classname">{{W,m,3,0,0,BIT_FORM,BITOFF,BITON}}</span></p>
 
-<p>Current VPD Accumulation, <span class="registerDisplay">{{R,D,108,0,0,DEC-F}}</span></p>
+<p>Current VPD Ac cumulation, <span class="registerDisplay">{{R,D,108,0,0,DEC-F}}</span></p>
 
 <p>Water Cycle Duration, <span class="registerDisplay">{{W,D,170,0,0,DEC-W}}</span></p>
 
